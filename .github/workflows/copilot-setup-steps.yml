@@ -1,0 +1,23 @@
+name: Copilot Setup Steps
+on:
+  workflow_dispatch:
+  push:
+    paths: [.github/workflows/copilot-setup-steps.yml]
+jobs:
+  copilot-setup-steps:   # job name must be exactly this
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install native dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential pkg-config libssl-dev \
+            libgtk-4-dev libglib2.0-dev libwebkitgtk-6.0-dev \
+            libjavascriptcoregtk-6.0-dev libsoup-3.0-dev libgraphene-1.0-dev \
+            desktop-file-utils appstream
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy, rustfmt
+      - uses: Swatinem/rust-cache@v2
