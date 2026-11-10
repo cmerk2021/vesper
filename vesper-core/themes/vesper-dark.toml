@@ -1,0 +1,28 @@
+# Vesper Dark — the default theme.
+# Every token is optional; missing tokens fall back to these same defaults.
+
+window_opacity = 1.0
+blur = false
+blur_strength = 20.0
+radius_sm = 4.0
+radius_md = 8.0
+radius_lg = 16.0
+spacing_unit = 8.0
+density = "cozy"
+font_ui = "Sans"
+font_message = "Sans"
+font_mono = "Monospace"
+font_size_base = 14.0
+avatar_size = 40
+
+[colors]
+bg_base = "#121318"
+bg_surface = "#1a1c23"
+bg_elevated = "#23262f"
+fg_primary = "#e8eaf0"
+fg_muted = "#8a8f9e"
+accent = "#7d8cff"
+accent_fg = "#ffffff"
+danger = "#f0556c"
+border = "#2c2f3a"
+mention_bg = "rgba(125, 140, 255, 0.14)"

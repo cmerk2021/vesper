@@ -1,0 +1,23 @@
+# Vesper Glass — translucent surfaces for compositors with blur support.
+# blur_strength is a hint consumed by the platform layer (KWin etc.) later.
+
+window_opacity = 0.82
+blur = true
+blur_strength = 28.0
+radius_sm = 6.0
+radius_md = 10.0
+radius_lg = 18.0
+spacing_unit = 8.0
+density = "cozy"
+
+[colors]
+bg_base = "rgba(18, 19, 24, 0.72)"
+bg_surface = "rgba(26, 28, 35, 0.66)"
+bg_elevated = "rgba(35, 38, 47, 0.72)"
+fg_primary = "#eceef5"
+fg_muted = "#9aa0b0"
+accent = "#8b9aff"
+accent_fg = "#ffffff"
+danger = "#f0556c"
+border = "rgba(255, 255, 255, 0.08)"
+mention_bg = "rgba(139, 154, 255, 0.18)"

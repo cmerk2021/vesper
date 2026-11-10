@@ -1,0 +1,44 @@
+app-id: io.github.cmerk2021.Vesper
+runtime: org.gnome.Platform
+runtime-version: '47'
+sdk: org.gnome.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.rust-stable
+command: vesper
+
+finish-args:
+  - --share=network
+  - --share=ipc
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+  - --socket=pulseaudio
+  - --talk-name=org.freedesktop.secrets
+  - --talk-name=com.canonical.AppMenu.Registrar
+  - --talk-name=org.kde.StatusNotifierWatcher
+  - --talk-name=org.freedesktop.Notifications
+
+build-options:
+  append-path: /usr/lib/sdk/rust-stable/bin
+  env:
+    CARGO_HOME: /run/build/vesper/cargo
+
+modules:
+  - name: vesper
+    buildsystem: simple
+    build-commands:
+      - cargo --offline fetch --manifest-path Cargo.toml
+      - cargo --offline build --release
+      - install -Dm755 target/release/vesper /app/bin/vesper
+      - install -Dm644 packaging/io.github.cmerk2021.Vesper.desktop
+        /app/share/applications/io.github.cmerk2021.Vesper.desktop
+      - install -Dm644 packaging/io.github.cmerk2021.Vesper.metainfo.xml
+        /app/share/metainfo/io.github.cmerk2021.Vesper.metainfo.xml
+      - install -Dm644 packaging/io.github.cmerk2021.Vesper.svg
+        /app/share/icons/hicolor/scalable/apps/io.github.cmerk2021.Vesper.svg
+    sources:
+      - type: dir
+        path: ..
+      # Generated from Cargo.lock in CI (flatpak-cargo-generator.py); not
+      # committed by hand.
+      - cargo-sources.json

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Vesper
+GenericName=Discord Client
+Comment=A native, beautiful Discord client for Linux
+Exec=vesper
+Icon=io.github.cmerk2021.Vesper
+Terminal=false
+Categories=Network;InstantMessaging;GTK;
+Keywords=discord;chat;messaging;voice;
+StartupNotify=true

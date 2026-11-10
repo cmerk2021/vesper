@@ -1,0 +1,120 @@
+{
+  "v": 9,
+  "user": {
+    "id": "190320984123768832",
+    "username": "vesperuser",
+    "global_name": "Vesper User",
+    "discriminator": "0",
+    "avatar": "a1b2c3d4e5f60718293a4b5c6d7e8f90",
+    "mfa_enabled": true,
+    "premium_type": 0,
+    "flags": 32,
+    "purchased_flags": 0,
+    "nsfw_allowed": true,
+    "phone": null,
+    "bio": "hello"
+  },
+  "session_id": "8d9e0f1a2b3c4d5e6f708192a3b4c5d6",
+  "resume_gateway_url": "wss://gateway-us-east1-b.discord.gg",
+  "session_type": "normal",
+  "analytics_token": "not-a-real-token",
+  "auth_session_id_hash": "qQmFhZTYyNmM0ZDdjYmQ1ZQ==",
+  "api_code_version": 1,
+  "guilds": [
+    {
+      "id": "80351110224678912",
+      "joined_at": "2021-01-01T00:00:00.000000+00:00",
+      "member_count": 42,
+      "properties": {
+        "id": "80351110224678912",
+        "name": "Vesper Hangout",
+        "icon": "8342729096ea3675442027381ff50dfe",
+        "description": null,
+        "owner_id": "190320984123768832",
+        "features": ["COMMUNITY", "SOME_FUTURE_FEATURE"]
+      },
+      "channels": [
+        {
+          "id": "103735883630395392",
+          "type": 4,
+          "name": "Text Channels",
+          "position": 0,
+          "permission_overwrites": [],
+          "flags": 0
+        },
+        {
+          "id": "103735883630395393",
+          "type": 0,
+          "name": "general",
+          "position": 1,
+          "parent_id": "103735883630395392",
+          "last_message_id": "347283998499846154",
+          "topic": "general chat",
+          "rate_limit_per_user": 0
+        },
+        {
+          "id": "103735883630395394",
+          "type": 2,
+          "name": "Voice",
+          "position": 2,
+          "bitrate": 64000
+        }
+      ],
+      "threads": [],
+      "stickers": [],
+      "roles": [],
+      "emojis": [],
+      "large": false,
+      "lazy": true,
+      "version": "1704067200000"
+    }
+  ],
+  "private_channels": [
+    {
+      "id": "319674150115610528",
+      "type": 1,
+      "last_message_id": "3343820033257021450",
+      "flags": 0,
+      "recipient_ids": ["82198898841029460"]
+    },
+    {
+      "id": "319674150115610529",
+      "type": 3,
+      "name": "project chat",
+      "icon": null,
+      "owner_id": "82198898841029460",
+      "recipient_ids": ["82198898841029460", "82198898841029461"]
+    }
+  ],
+  "users": [
+    {
+      "id": "82198898841029460",
+      "username": "friend",
+      "global_name": "Friend",
+      "discriminator": "0",
+      "avatar": "33ecab261d4681afa4d85a04691c4a01",
+      "avatar_decoration_data": null,
+      "bot": false
+    }
+  ],
+  "read_state": {
+    "entries": [
+      {
+        "id": "103735883630395393",
+        "last_message_id": "347283998499846154",
+        "mention_count": 0,
+        "flags": 0
+      }
+    ],
+    "partial": false,
+    "version": 1042
+  },
+  "relationships": [],
+  "user_guild_settings": { "entries": [], "partial": false, "version": 5 },
+  "user_settings_proto": "opaque-base64-blob",
+  "sessions": [],
+  "experiments": [[1, 2, 3]],
+  "country_code": "US",
+  "friend_suggestion_count": 0,
+  "some_field_added_next_week": { "nested": ["unknown", 1, null] }
+}
