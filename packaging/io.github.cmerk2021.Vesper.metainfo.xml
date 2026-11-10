@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.cmerk2021.Vesper</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Vesper</name>
+  <summary>Native Discord client for Linux</summary>
+  <description>
+    <p>
+      Vesper is a native, beautiful Discord client for Linux built with GTK 4.
+      It offers a familiar server, channel and message layout with a powerful
+      TOML-based theme engine, including translucent themes for compositors
+      with blur support.
+    </p>
+    <p>
+      Note: Vesper is an unofficial client that logs into a regular Discord
+      user account. Using third-party clients can violate Discord's Terms of
+      Service; use it at your own risk.
+    </p>
+  </description>
+  <launchable type="desktop-id">io.github.cmerk2021.Vesper.desktop</launchable>
+  <url type="homepage">https://github.com/cmerk2021/vesper</url>
+  <url type="bugtracker">https://github.com/cmerk2021/vesper/issues</url>
+  <url type="vcs-browser">https://github.com/cmerk2021/vesper</url>
+  <developer id="io.github.cmerk2021">
+    <name>cmerk2021</name>
+  </developer>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-chat">intense</content_attribute>
+    <content_attribute id="social-audio">intense</content_attribute>
+  </content_rating>
+  <categories>
+    <category>Network</category>
+    <category>InstantMessaging</category>
+  </categories>
+  <releases>
+    <release version="0.1.0" date="2026-11-10">
+      <description>
+        <p>
+          Initial release: gateway and REST session, webview and token login,
+          theme engine with hot reload, and the core app shell.
+        </p>
+      </description>
+    </release>
+  </releases>
+</component>

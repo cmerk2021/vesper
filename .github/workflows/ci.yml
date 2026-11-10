@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install native dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential pkg-config libssl-dev \
+            libgtk-4-dev libglib2.0-dev libwebkitgtk-6.0-dev \
+            libjavascriptcoregtk-6.0-dev libsoup-3.0-dev libgraphene-1.0-dev \
+            desktop-file-utils appstream
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy, rustfmt
+      - uses: Swatinem/rust-cache@v2
+      - name: Format
+        run: cargo fmt --check
+      - name: Clippy
+        run: cargo clippy --workspace --all-targets -- -D warnings
+      - name: Test
+        run: cargo test --workspace
+      - name: Validate packaging metadata
+        run: |
+          desktop-file-validate packaging/io.github.cmerk2021.Vesper.desktop
+          appstreamcli validate --no-net packaging/io.github.cmerk2021.Vesper.metainfo.xml

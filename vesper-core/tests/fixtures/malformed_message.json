@@ -1,0 +1,18 @@
+{
+  "id": 334385199974967099,
+  "type": 42,
+  "channel_id": 103735883630395393,
+  "author": null,
+  "content": null,
+  "timestamp": null,
+  "attachments": [
+    { "unexpected": "shape", "no_known_fields_at_all": true }
+  ],
+  "embeds": [
+    "embeds can even be the wrong type inside, we keep them raw",
+    { "title": 42 }
+  ],
+  "mentions": "this field is the wrong type but unknown to our model",
+  "totally_unknown_object": { "deep": { "deeper": [null, {}, []] } },
+  "flags": "32"
+}

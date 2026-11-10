@@ -1,0 +1,57 @@
+{
+  "id": "197038439483310086",
+  "joined_at": "2020-06-01T12:00:00.000000+00:00",
+  "member_count": 1234,
+  "large": true,
+  "unavailable": false,
+  "properties": {
+    "id": "197038439483310086",
+    "name": "Discord Testers",
+    "icon": "f64c482b807da4f539cff778d174971c",
+    "splash": null,
+    "owner_id": "73193882359173120",
+    "verification_level": 3,
+    "premium_tier": 3,
+    "features": ["VANITY_URL", "ANIMATED_ICON", "UNRELEASED_FEATURE_XYZ"],
+    "preferred_locale": "en-US",
+    "nsfw_level": 0
+  },
+  "channels": [
+    {
+      "id": "197038439483310087",
+      "type": 4,
+      "name": "Information",
+      "position": 0
+    },
+    {
+      "id": "197038439483310088",
+      "type": 0,
+      "name": "announcements",
+      "position": 1,
+      "parent_id": "197038439483310087",
+      "topic": "Official announcements",
+      "last_message_id": "968380809700069377",
+      "default_thread_rate_limit_per_user": 0
+    },
+    {
+      "id": "197038439483310089",
+      "type": 15,
+      "name": "some-forum",
+      "position": 2,
+      "parent_id": "197038439483310087",
+      "available_tags": [{ "id": "1", "name": "bug" }]
+    }
+  ],
+  "threads": [
+    { "id": "999", "type": 11, "name": "a thread", "parent_id": "197038439483310088" }
+  ],
+  "roles": [{ "id": "197038439483310086", "name": "@everyone", "permissions": "104324161" }],
+  "emojis": [],
+  "stickers": [],
+  "presences": [],
+  "voice_states": [],
+  "guild_scheduled_events": [],
+  "version": "1704067200001",
+  "data_mode": "full",
+  "experimental_unknown_blob": [1, "two", { "three": 3 }]
+}

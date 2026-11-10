@@ -1,0 +1,18 @@
+# Vesper Light
+
+window_opacity = 1.0
+blur = false
+spacing_unit = 8.0
+density = "cozy"
+
+[colors]
+bg_base = "#f5f6fa"
+bg_surface = "#ffffff"
+bg_elevated = "#e9ebf2"
+fg_primary = "#1d2026"
+fg_muted = "#6a7080"
+accent = "#5465e6"
+accent_fg = "#ffffff"
+danger = "#d63955"
+border = "#d5d8e2"
+mention_bg = "rgba(84, 101, 230, 0.12)"

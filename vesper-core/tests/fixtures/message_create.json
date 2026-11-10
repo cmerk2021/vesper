@@ -1,0 +1,74 @@
+{
+  "id": "334385199974967042",
+  "type": 0,
+  "channel_id": "103735883630395393",
+  "guild_id": "80351110224678912",
+  "author": {
+    "id": "82198898841029460",
+    "username": "friend",
+    "global_name": "Friend",
+    "discriminator": "0",
+    "avatar": "33ecab261d4681afa4d85a04691c4a01",
+    "public_flags": 64,
+    "avatar_decoration_data": null
+  },
+  "member": {
+    "nick": "Friendo",
+    "roles": ["197038439483310086"],
+    "joined_at": "2020-06-01T12:00:00.000000+00:00"
+  },
+  "content": "Check out this file and link https://example.com",
+  "timestamp": "2024-05-01T18:23:05.000000+00:00",
+  "edited_timestamp": null,
+  "tts": false,
+  "mention_everyone": false,
+  "mentions": [],
+  "mention_roles": [],
+  "attachments": [
+    {
+      "id": "334385199974967043",
+      "filename": "screenshot.png",
+      "size": 123456,
+      "url": "https://cdn.discordapp.com/attachments/103735883630395393/334385199974967043/screenshot.png",
+      "proxy_url": "https://media.discordapp.net/attachments/103735883630395393/334385199974967043/screenshot.png",
+      "width": 1920,
+      "height": 1080,
+      "content_type": "image/png",
+      "placeholder": "someblurhash",
+      "placeholder_version": 1
+    }
+  ],
+  "embeds": [
+    {
+      "type": "rich",
+      "title": "Example Domain",
+      "description": "Example embed",
+      "url": "https://example.com",
+      "color": 8224255,
+      "fields": [{ "name": "a", "value": "b", "inline": true }],
+      "footer": { "text": "footer" },
+      "unknown_embed_field": true
+    }
+  ],
+  "reactions": [
+    { "emoji": { "id": null, "name": "👍" }, "count": 3, "me": false }
+  ],
+  "pinned": false,
+  "webhook_id": null,
+  "flags": 0,
+  "message_reference": {
+    "message_id": "334385199974967000",
+    "channel_id": "103735883630395393",
+    "guild_id": "80351110224678912"
+  },
+  "referenced_message": {
+    "id": "334385199974967000",
+    "content": "original",
+    "author": { "id": "190320984123768832", "username": "vesperuser" }
+  },
+  "nonce": "334385199974967041",
+  "components": [],
+  "sticker_items": [],
+  "position": null,
+  "brand_new_field_from_the_future": { "a": [1, 2, 3] }
+}
